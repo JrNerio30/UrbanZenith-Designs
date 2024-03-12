@@ -1,0 +1,16 @@
+@import url('../fontshare/Chillax_Complete/Fonts/WEB/css/chillax.css');
+:root{
+  --bg-color: black;
+  --chillax-font: '';
+}
+
+section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+h1{
+  font-size: 10rem;
+  font-family: 'chillax-semibold';
+} 
