@@ -1,0 +1,24 @@
+@media screen and (min-width: 768px) {
+  .hero__container{
+    margin: 0 3rem;
+    gap: 2rem;
+    align-items: baseline;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero{
+    background: url(../assets/herochair.jpg) center/cover no-repeat;
+  }
+  .hero__container{
+    margin: 0 12rem;
+    gap: 4rem;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .hero__first__btn,
+  .hero__second__btn{
+    font-size: 20px;
+  }
+}
