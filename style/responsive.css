@@ -1,22 +1,23 @@
+/* || MOBILE  */
 @media screen and (min-width: 768px) {
   .hero__container{
     margin: 0 3rem;
     gap: 2rem;
-    align-items: baseline;
-    justify-content: center;
   }
 }
-
+/* ||LARGER SCREENS */
 @media screen and (min-width: 1200px) {
+  /* ||HERO */
   .hero{
     background: url(../assets/herochair.jpg) center/cover no-repeat;
+    justify-content: space-between;
+    flex-direction: row;
   }
+  /* Hero Container */
   .hero__container{
-    margin: 0 12rem;
-    gap: 4rem;
-    align-items: baseline;
-    justify-content: center;
+    gap: 3rem;
   }
+  /* Hero Buttons */
   .hero__first__btn,
   .hero__second__btn{
     font-size: 20px;
