@@ -1,9 +1,9 @@
 const changeImagebtn = document.getElementById("change-image");
 const backgroundImg = document.querySelector(".hero");
 const imageUrls = [
-  "../assets/herosecondchair.jpg",
-  "../assets/brownfurniture.jpg",
-  "../assets/herochair.jpg"
+  "./assets/herosecondchair.jpg",
+  "./assets/brownfurniture.jpg",
+  "./assets/herochair.jpg"
 ];
 let currentIndex = 0;
 
