@@ -9,6 +9,10 @@
   --secondary-font: 'Poppins';
   --font-white: white;
 }
+::selection{
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+}
 
 /* ||Body Background Color */
 body{
@@ -18,15 +22,19 @@ body{
 /* || HERO */
 .hero{
   background: url(../assets/herochair-mobile.jpg) center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-inline: 5rem ;
+  transition: all 500ms;
+  gap: 5rem;
 }
 
 /* Hero Container */
 .hero__container{
-  height: 100vh;
-  margin: 0 1rem ;
   display: flex;
-  align-items: baseline;
-  justify-content: center;
   flex-direction: column;
   gap: 2rem;
 }
@@ -43,6 +51,7 @@ body{
   font-family: var(--secondary-font);
   font-size: clamp(1.5rem, 2vw, 2vw );
   color: white;
+  line-height: 120%;
 }
 
 /* || HERO BUTTONS CONTAINER */
@@ -92,3 +101,22 @@ body{
   border:2px solid  var(--secondary-color);
   color: var(--secondary-color);
 }
+
+/* || Hero Arrow Icon */
+.hero__arrow__icon{
+  font-size: 4rem;
+  cursor: pointer;
+  color: var(--font-white);
+  background-color: var(--main-color);
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero__arrow__icon:hover{
+  transform: scale(1.1) rotate(360deg);
+}
+.hero__arrow__icon:active{
+  transform: scale(1) rotate(360deg);
+}
+
+
