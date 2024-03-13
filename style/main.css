@@ -5,6 +5,7 @@
 :root{
   --main-color: #021c05;
   --secondary-color: #ebf1e7;
+  --color-black: #111111;
   --main-font: 'chillax-semibold';
   --secondary-font: 'Poppins';
   --font-white: white;
@@ -16,7 +17,7 @@
 
 /* ||Body Background Color */
 body{
-  background-color: var(--bg-color);
+  background-color: var(--main-color);
 }
 
 /* || HERO */
@@ -28,8 +29,13 @@ body{
   justify-content: center;
   flex-direction: column;
   padding-inline: 5rem ;
+  margin: 2rem 3rem;
+  border-radius: 5rem;
+  -webkit-box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 1);
   transition: all 500ms;
-  gap: 5rem;
+  gap: 10rem;
 }
 
 /* Hero Container */
@@ -119,4 +125,4 @@ body{
   transform: scale(1) rotate(360deg);
 }
 
-
+/* ||CONTENT */
