@@ -24,15 +24,14 @@ body, html{
 
 /* || HERO */
 .hero{
-  background: url(../assets/brownfurniture.jpg) center/cover no-repeat fixed;
+  background: url(../assets/brownfurniture.jpg) center/cover no-repeat;
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-inline: 5rem ;
+  padding-inline: 2rem ;
   transition: all 500ms;
-  gap: 10rem;
+  gap: 5rem;
 }
 
 /* Hero Container */
@@ -66,7 +65,7 @@ body, html{
 
 /* Hero Button */
 .hero__first__btn{
-  font-size: 10px;
+  font-size: 15px;
   text-align: center;
   text-decoration: none;
   color: var(--font-white);
@@ -84,10 +83,9 @@ body, html{
   color: var(--main-color);
 }
 
-
 /* Secondary Button */
 .hero__second__btn{
-  font-size: 10px;
+  font-size: 15px;
   text-align: center;
   text-decoration: none;
   color: var(--main-color);
@@ -106,7 +104,7 @@ body, html{
 
 /* || Hero Arrow Icon */
 .hero__arrow__icon{
-  font-size: 4rem;
+  font-size: 3rem;
   cursor: pointer;
   color: var(--font-white);
   background-color: var(--main-color);
@@ -165,6 +163,7 @@ body, html{
   font-size: 2rem;
   text-transform: capitalize;
 }
+
 /* Content Button */
 .content__btn{
   font-family: var(--secondary-font);
@@ -172,12 +171,20 @@ body, html{
   color: var(--main-color);
   text-align: center;gap: 15rem;
   font-size: 1.5rem;
+  transition: all 0.3s;
+  padding-block: 10px;
+}
+
+/* Content Button Hover */
+.content__btn:hover{
+  color: var(--secondary-color);
+  background-color: var(--main-color);
 }
 
 /* Content Image */
 .content__image{
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   height: auto;
   transition: all 0.3s;
   cursor: pointer;

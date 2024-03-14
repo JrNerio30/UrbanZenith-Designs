@@ -7,6 +7,7 @@ const imageUrls = [
 ];
 let currentIndex = 0;
 
+// HERO Background Image
 changeImagebtn.addEventListener("click", () => {
 
   backgroundImg.style.background = `url(${imageUrls[currentIndex]}) center/cover no-repeat fixed`
@@ -18,15 +19,29 @@ changeImagebtn.addEventListener("click", () => {
     }
   }
 )
-
-
-const acc = document.getElementsByClassName("content");
-let i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("mouseout", function() {
-    this.classList.toggle("active");
+// Removes fixed propert for background attachment when the window inner width is less than 1200px
+window.addEventListener("resize", () =>{
+    if(window.innerWidth >= 1200){
+      backgroundImg.style.backgroundAttachment = "fixed";
+    }else{
+      backgroundImg.style.backgroundAttachment = "scroll"
     }
-  )
+  }
+)
+
+if(window.innerWidth >= 1200){
+  backgroundImg.style.backgroundAttachment = "fixed";
+}else{
+  backgroundImg.style.backgroundAttachment = "scroll";
 }
 
+
+const acc = document.getElementsByClassName("accordion");
+let i;
+
+for(i = 0; i < acc.length; i++){
+  acc[i].addEventListener("click", function(){
+    this.classList.toggle("active")
+    } 
+  );
+}
