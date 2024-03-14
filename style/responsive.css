@@ -1,20 +1,24 @@
 /* || MOBILE  */
 @media screen and (min-width: 768px) {
+  .hero{
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   .hero__container{
-    margin: 0 3rem;
     gap: 2rem;
   }
   .content > .content__main{
-    gap: 6rem;
+    gap: 5rem;
   }
 }
 /* ||LARGER SCREENS */
 @media screen and (min-width: 1200px) {
   /* ||HERO */
   .hero{
-    background-attachment: fixed;
     justify-content: space-between;
     flex-direction: row;
+    align-items: center;
   }
   /* Hero Container */
   .hero__container{
@@ -24,6 +28,9 @@
   .hero__first__btn,
   .hero__second__btn{
     font-size: 20px;
+  }
+  .hero__arrow_icon{
+   font-size: 4rem;
   }
   .content__container--livroom{
     padding-bottom: 0;
@@ -36,5 +43,5 @@
   .content__image:hover{
     border-radius: 50px;
     filter: blur(2px) grayscale(50%);
-  }
+  }  
 }
