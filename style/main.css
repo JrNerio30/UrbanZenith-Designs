@@ -1,10 +1,11 @@
 /* ||Chillax Font from https://www.fontshare.com/fonts/chillax */
 @import url('../fontshare/Chillax_Complete/Fonts/WEB/css/chillax.css');
-
+/* || Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* ||ROOT */
 :root{
   --main-color: #021c05;
-  --secondary-color: #ebf1e7;
+  --secondary-color: #FFFAFF;
   --color-black: #111111;
   --main-font: 'chillax-semibold';
   --secondary-font: 'Poppins';
@@ -16,24 +17,20 @@
 }
 
 /* ||Body Background Color */
-body{
-  background-color: var(--main-color);
+body, html{
+  background-color: var(--secondary-color);
+  scroll-behavior: smooth;
 }
 
 /* || HERO */
 .hero{
-  background: url(../assets/herochair-mobile.jpg) center/cover no-repeat;
+  background: url(../assets/brownfurniture.jpg) center/cover no-repeat fixed;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding-inline: 5rem ;
-  margin: 2rem 3rem;
-  border-radius: 5rem;
-  -webkit-box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 1);
-  box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 1);
   transition: all 500ms;
   gap: 10rem;
 }
@@ -61,8 +58,7 @@ body{
 }
 
 /* || HERO BUTTONS CONTAINER */
-.hero__container
-.hero__btn__container{
+.hero__container > .hero__btn__container{
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
@@ -126,3 +122,68 @@ body{
 }
 
 /* ||CONTENT */
+.content{
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px var(--main-color) solid;
+}
+
+.content > .content__main{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* Content Container LIVING ROOM */
+.content__container--livroom{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-block: 5rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px var(--main-color) solid;
+}
+.content__container--bedroom{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-block: 5rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px var(--main-color) solid;
+}
+.content__container--kitchen{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-block: 5rem;
+}
+/* Content Title */
+.content__title{
+  font-family: "chillax-medium";
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+/* Content Button */
+.content__btn{
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  color: var(--main-color);
+  text-align: center;gap: 15rem;
+  font-size: 1.5rem;
+}
+
+/* Content Image */
+.content__image{
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+/* ||ACCORDION */
+.accordion{
+  min-height: 100vh;
+}
