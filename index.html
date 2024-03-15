@@ -13,12 +13,13 @@
     <script src="./src/main.js" async></script>
   </head>
   <body>
+    
     <header class="hero">
       <div class="hero__container">
         <h1 class="hero__title">Elevate <br> Your Space</h1>
           <p class="hero__text">Discover Modern Comfort <br> with Urban Zenith Designs</p>
             <div class="hero__btn__container">
-              <a class="hero__first__btn" href="#">Buy Now</a>
+              <a class="hero__first__btn" href="#card">Buy Now</a>
                 <a class="hero__second__btn" href="#content">Explore</a>
               </div>
             </div>
@@ -27,33 +28,92 @@
       </div>
     </header>
     <section class="content" id="content">
+      <h1 class="content__title">Our Collection</h1>
       <ul class="content__main">
-        <li class="content__container--livroom">
-          <p class="content__title">LIVING ROOM</p>
+        <li class="content__container--livroom collection">
+          <p class="content__category">◇ LIVING ROOM ◇</p>
             <a href="#" class="content__img_anchor">
               <img class="content__image" src="./assets/livingroom.jpg" alt="green plant on white ceramic pot">
             </a>
-          <a class="content__btn" href="#">Shop Now ➔</a>
+          <a class="content__btn" href="#card">Shop Now ➔</a>
         </li>
-        <li class="content__container--bedroom">
-          <p class="content__title">BEDROOM</p>
+        <li class="content__container--bedroom collection">
+          <p class="content__category">◇ BEDROOM ◇</p>
             <a href="#" class="content__img_btn">
              <img class="content__image" src="./assets/bedroom.jpg" alt="green plant on white ceramic pot">
            </a>  
-          <a class="content__btn" href="#">Shop Now ➔</a>
+          <a class="content__btn" href="#card">Shop Now ➔</a>
         </li>
-        <li class="content__container--kitchen">
-          <p class="content__title">KITCHEN</p>
+        <li class="content__container--kitchen collection">
+          <p class="content__category">◇ KITCHEN ◇</p>
             <a href="#" class="content__img_btn">
               <img class="content__image" src="./assets/kitchen.jpg" alt="green plant on white ceramic pot">
            </a>
-          <a class="content__btn" href="#">Shop Now ➔</a>
+          <a class="content__btn" href="#card">Shop Now ➔</a>
         </li>
       </ul>
     </section>
-    <section class="accordion">
 
+    <section class="card" id="card">
+      <ul class="card__main">
+        <li class="card__container">
+          <img class="card__img" src="./assets/pendantlamp.jpg" alt="turned on pendant lamps">
+          <div class="card__content">
+            <p class="card__content__name">Gold Pendant Lamp</p>
+            <h2 class="card__content__price">$150.99</h2>
+            <a class="card__buy" href="#card">Buy</a>
+          </div>
+        </li>
+        <li class="card__container">
+          <img class="card__img" src="./assets/armchair.jpg" alt="brown leather armchair beside pink roses">
+          <div class="card__content">
+            <p class="card__content__name">Brown Leather Armchair</p>
+            <h2 class="card__content__price">$500.97</h2>
+            <a class="card__buy" href="#card">Buy</a>
+          </div>
+        </li>
+        <li class="card__container">
+          <img class="card__img" src="./assets/whitecuddlechair.jpg" alt="white cuddle chair and throw pillows near window">
+          <div class="card__content">
+            <p class="card__content__name">White Cuddle Chair</p>
+            <h2 class="card__content__price">$600.98</h2>
+            <a class="card__buy" href="#card">Buy</a>
+          </div>
+        </li>
+        <li class="card__container">
+          <img class="card__img" src="./assets/woodentable.jpg" alt="Empty White Chairs Beside Table
+          ">
+          <div class="card__content">
+            <p class="card__content__name">Wooden Table Set</p>
+            <h2 class="card__content__price">$350.96</h2>
+            <a class="card__buy" href="#card">Buy</a>
+          </div>
+        </li>
+        <li class="card__container">
+          <img class="card__img" src="./assets/greensofa.jpg" alt="green fabric sofa">
+          <div class="card__content">
+            <p class="card__content__name">Green Fabric Sofa</p>
+            <h2 class="card__content__price">$780.99</h2>
+            <a class="card__buy" href="#card">Buy</a>
+          </div>
+        </li>
+        <li class="card__container">
+          <img class="card__img" src="./assets/bed.jpg" alt="white bed linen near window">
+          <div class="card__content">
+            <p class="card__content__name">White Bed Set</p>
+            <h2 class="card__content__price">$3500.89</h2>
+            <a class="card__buy" href="#card">Buy</a>
+          </div>
+        </li>
+      </ul>
     </section>
+    <!-- <section class="accordion">
+      <ul class="accordion__main">
+        <li class="accordion__container">
+          <button class="accordion__btn"></button>
+        </li>
+      </ul>
+    </section> -->
     <!-- Icons from https://ionic.io/ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
