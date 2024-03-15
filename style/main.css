@@ -44,14 +44,14 @@ body, html{
 /* Hero Title */
 .hero__title{
   font-family: var(--main-font);
-  font-size: clamp(3rem, 7vw, 7vw );
+  font-size: clamp(2rem, 7vw, 7vw );
   color: var(--main-color);
 }
 
 /* Hero Text */
 .hero__text{
   font-family: var(--secondary-font);
-  font-size: clamp(1.5rem, 2vw, 2vw );
+  font-size: clamp(1rem, 2vw, 2vw );
   color: white;
   line-height: 120%;
 }
@@ -65,7 +65,7 @@ body, html{
 
 /* Hero Button */
 .hero__first__btn{
-  font-size: 15px;
+  font-size: 10px;
   text-align: center;
   text-decoration: none;
   color: var(--font-white);
@@ -85,7 +85,7 @@ body, html{
 
 /* Secondary Button */
 .hero__second__btn{
-  font-size: 15px;
+  font-size: 10px;
   text-align: center;
   text-decoration: none;
   color: var(--main-color);
@@ -104,7 +104,7 @@ body, html{
 
 /* || Hero Arrow Icon */
 .hero__arrow__icon{
-  font-size: 3rem;
+  font-size: 2rem;
   cursor: pointer;
   color: var(--font-white);
   background-color: var(--main-color);
@@ -122,18 +122,24 @@ body, html{
 /* ||CONTENT */
 .content{
   min-height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-bottom: 1px var(--main-color) solid;
+}
+
+.content__title{
+  text-align: center;
+  margin-block: 5rem;
+  font-size: clamp(2rem, 5vw, 5vw );
+  font-family: var(--main-font);
 }
 
 .content > .content__main{
   display: flex;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
-/* Content Container LIVING ROOM */
+
+/* Content Container Living Room */
 .content__container--livroom{
   display: flex;
   flex-direction: column;
@@ -142,6 +148,8 @@ body, html{
   padding-bottom: 5rem;
   border-bottom: 1px var(--main-color) solid;
 }
+
+/* Content Container BedRoom */
 .content__container--bedroom{
   display: flex;
   flex-direction: column;
@@ -150,17 +158,27 @@ body, html{
   padding-bottom: 5rem;
   border-bottom: 1px var(--main-color) solid;
 }
+
+/* Content Container Kitchen */
 .content__container--kitchen{
   display: flex;
   flex-direction: column;
   gap: 5rem;
   margin-block: 5rem;
 }
+
+/* Content Collections */
+.collections{
+  flex: 1;
+  width: 100%;
+}
+
+
 /* Content Title */
-.content__title{
-  font-family: "chillax-medium";
+.content__category{
+  font-family: var(--secondary-font);
   text-align: center;
-  font-size: 2rem;
+  font-size: clamp(1rem, 3vh, 3vh);
   text-transform: capitalize;
 }
 
@@ -173,12 +191,14 @@ body, html{
   font-size: 1.5rem;
   transition: all 0.3s;
   padding-block: 10px;
+  text-decoration: underline;
 }
 
 /* Content Button Hover */
 .content__btn:hover{
   color: var(--secondary-color);
   background-color: var(--main-color);
+  text-decoration: none;
 }
 
 /* Content Image */
@@ -190,7 +210,80 @@ body, html{
   cursor: pointer;
 }
 
-/* ||ACCORDION */
-.accordion{
+/* ||CARDS */
+.card{
   min-height: 100vh;
+  margin: 3rem 0.5rem;
+  max-width: 75rem;
+  padding: 3rem 0.5rem;
+  position: relative;
 }
+
+/* Card Main (ul) */
+.card__main{
+  margin: 0.5rem;
+}
+
+
+/* Card Container (li) */
+.card__container{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-block: 3rem;
+  flex-basis: 200px;
+  border: 1px black solid;
+  cursor: pointer;
+}
+
+
+/* Card Images */
+.card__img{
+  width: 100%;
+  height: auto;
+  border-bottom: 1px black solid ;
+}
+
+/* Card Content */
+.card__content{
+  margin-top: 0.5rem;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/* Card Content Name */
+.card__content__name{
+  font-family: 'chillax-medium';
+  font-size: 2vh;
+}
+
+/* Card Content Price */
+.card__content__price{
+  font-family: var(--main-font);
+}
+
+.card__buy{
+  color: var(--main-color);
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  background-color: green ;
+  color: var(--secondary-color);
+  padding: 5px 10px;
+  border-radius: 10px;
+  max-width: 30px;
+  transition: all 0.3s;
+}
+
+.card__buy:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 5px 0 var(--color-black);
+  background-color: rgb(47, 180, 47) ;
+  color: var(--secondary-color);
+}
+
+
+
+
+
