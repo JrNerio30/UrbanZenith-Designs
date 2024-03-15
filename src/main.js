@@ -35,7 +35,7 @@ if(window.innerWidth >= 1200){
   backgroundImg.style.backgroundAttachment = "scroll";
 }
 
-
+// Accordion Active Click Event
 const acc = document.getElementsByClassName("accordion");
 let i;
 
