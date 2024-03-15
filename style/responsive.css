@@ -5,11 +5,34 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
   .hero__container{
     gap: 2rem;
   }
+
   .content > .content__main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 5rem;
+  }
+
+  .card__main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .card__container{
+    margin-block: 0;
+    align-items: baseline;
+    border: 1px black solid;
+    flex-basis: calc(50% - 6rem);
+  }
+
+  .card__content{
+    padding: 1rem;
   }
 }
 /* ||LARGER SCREENS */
@@ -19,29 +42,70 @@
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    padding-inline: 16rem;
   }
+
   /* Hero Container */
   .hero__container{
     gap: 3rem;
   }
+
   /* Hero Buttons */
   .hero__first__btn,
   .hero__second__btn{
     font-size: 20px;
   }
-  .hero__arrow_icon{
-   font-size: 4rem;
+
+  .hero__arrow__icon{
+   font-size: 3rem;
   }
+
+  .content > .content__main{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .collections{
+    flex-basis: calc(33% - 20px);
+  }
+
   .content__container--livroom{
     padding-bottom: 0;
     border-bottom: none;
   }
+
   .content__container--bedroom{
     padding-bottom: 0;
     border-bottom: none;
   }
+
   .content__image:hover{
     border-radius: 50px;
-    filter: blur(2px) grayscale(50%);
   }  
+
+  .card{
+    margin: 3rem auto;
+  }
+
+  .card__main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .card__container{
+    margin-block: 0;
+    align-items: baseline;
+    border: 1px black solid;
+    flex-basis: calc(33% - 20px);
+  }
+
+  .card__content{
+    padding: 1rem;
+  }
+
 }
