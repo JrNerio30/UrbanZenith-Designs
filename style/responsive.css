@@ -31,6 +31,10 @@
     flex-basis: calc(50% - 6rem);
   }
 
+  .card__container:hover{
+    transform: translateY(-10px);
+  }
+
   .card__content{
     padding: 1rem;
   }
@@ -102,6 +106,11 @@
     align-items: baseline;
     border: 1px black solid;
     flex-basis: calc(33% - 20px);
+  }
+
+  .card__container:hover{
+    transform: translateY(-11px);
+    box-shadow: 0 0 5px 0 black;
   }
 
   .card__content{
