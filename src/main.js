@@ -36,7 +36,7 @@ if(window.innerWidth >= 1200){
 }
 
 // Accordion Active Click Event
-const acc = document.getElementsByClassName("accordion");
+const acc = document.getElementsByClassName("accvideo__container");
 let i;
 
 for(i = 0; i < acc.length; i++){
