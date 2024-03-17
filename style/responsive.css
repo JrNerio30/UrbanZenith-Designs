@@ -31,9 +31,19 @@
     flex-basis: calc(50% - 6rem);
   }
 
+  .card__container:hover{
+    transform: translateY(-10px);
+  }
+
   .card__content{
     padding: 1rem;
   }
+
+  .accvideo{
+    margin: 10rem 7rem 5rem 7rem; 
+    gap: 5rem;
+  }
+
 }
 /* ||LARGER SCREENS */
 @media screen and (min-width: 1200px) {
@@ -104,8 +114,22 @@
     flex-basis: calc(33% - 20px);
   }
 
+  .card__container:hover{
+    transform: translateY(-11px);
+    box-shadow: 0 0 5px 0 black;
+  }
+
   .card__content{
     padding: 1rem;
   }
 
+  .accvideo{
+    margin: 10rem 15rem 5rem 15rem; 
+    flex-direction: row;
+  }
+
+  .accvideo__video{
+    max-width: 100rem;
+    margin: 0;
+  }
 }
