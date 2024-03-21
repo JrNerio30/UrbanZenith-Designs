@@ -18,7 +18,7 @@ changeImagebtn.addEventListener("click", () => {
       currentIndex = 0;
     }
   }
-)
+);
 // Removes fixed propert for background attachment when the window inner width is less than 1200px
 window.addEventListener("resize", () =>{
     if(window.innerWidth >= 1200){
@@ -27,7 +27,7 @@ window.addEventListener("resize", () =>{
       backgroundImg.style.backgroundAttachment = "scroll"
     }
   }
-)
+);
 
 if(window.innerWidth >= 1200){
   backgroundImg.style.backgroundAttachment = "fixed";
@@ -41,7 +41,14 @@ let i;
 
 for(i = 0; i < acc.length; i++){
   acc[i].addEventListener("click", function(){
-    this.classList.toggle("active")
+    this.classList.toggle("active");
     } 
   );
 }
+
+const year = new Date().getFullYear();
+const by = "Urban Zenith Design";
+const result = `${year} ${by}`
+
+document.getElementById("copyRightYear").outerHTML = result;
+

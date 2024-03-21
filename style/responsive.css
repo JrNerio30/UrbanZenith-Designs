@@ -116,7 +116,7 @@
 
   .card__container:hover{
     transform: translateY(-11px);
-    box-shadow: 0 0 5px 0 black;
+    box-shadow: 0 0 10px 0 black;
   }
 
   .card__content{
@@ -132,4 +132,21 @@
     max-width: 100rem;
     margin: 0;
   }
+
+    /* Footer Information Spacing with width to give */
+  /* Footer links aligns with the information layout grid */
+  .footer__wrapper{
+    width: 20rem;
+    margin-top: 5rem;
+    margin-left: 5rem;
+  }
+  /* footer container changes to flex row for larger devices */
+  .footer__container{
+    flex-direction: row;
+  }
+  /* the iframe/google maps becomes smaller to fit in right on the footer */
+  .footer__map{
+    margin: 5rem;
+    max-width: 30rem;
+  } 
 }
