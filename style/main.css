@@ -1,24 +1,31 @@
 /* ||Chillax Font from https://www.fontshare.com/fonts/chillax */
 @import url('../fontshare/Chillax_Complete/Fonts/WEB/css/chillax.css');
-/* || Poppins Font */
+
+/* || POPPINS FONT */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* || MERRIWEATHER FONT */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 /* ||ROOT */
 :root{
-  --main-color: #021c05;
-  --secondary-color: #FFFAFF;
-  --color-black: #111111;
-  --main-font: 'chillax-semibold';
-  --secondary-font: 'Poppins';
-  --font-white: white;
+  --dark-green-color: #021c05;
+  --cream-color: #FFFAFF;
+  --black-color: #111111;
+  --white-color: white;
+  --chillax-semi-font: "Chillax-semibold";
+  --chillax-bold: "Chillax-bold";
+  --poppins-font: "Poppins";
+  --merriweather-font: "Merriweather" ;
 }
 ::selection{
-  background-color: var(--main-color);
-  color: var(--secondary-color);
+  background-color: var(--dark-green-color);
+  color: var(--cream-color);
 }
 
 /* ||Body Background Color */
 body, html{
-  background-color: var(--secondary-color);
+  background-color: var(--cream-color);
   scroll-behavior: smooth;
 }
 
@@ -43,20 +50,20 @@ body, html{
 
 /* Hero Title */
 .hero__title{
-  font-family: var(--main-font);
+  font-family: var(--chillax-bold);
   font-size: clamp(2rem, 7vw, 7vw );
-  color: var(--main-color);
+  color: var(--dark-green-color);
 }
 
 /* Hero Text */
 .hero__text{
-  font-family: var(--secondary-font);
+  font-family: var(--poppins-font);
   font-size: clamp(1rem, 2vw, 2vw );
   color: white;
   line-height: 120%;
 }
 
-/* || HERO BUTTONS CONTAINER */
+/* Hero Button Container */
 .hero__container > .hero__btn__container{
   display: flex;
   gap: 1rem;
@@ -68,19 +75,19 @@ body, html{
   font-size: 10px;
   text-align: center;
   text-decoration: none;
-  color: var(--font-white);
-  font-family: var(--secondary-font);
+  color: var(--white-color);
+  font-family: var(--merriweather-font);
   padding: 10px 20px;
-  background-color: var(--main-color);
-  border:2px solid var(--main-color);
+  background-color: var(--dark-green-color);
+  border:2px solid var(--dark-green-color);
   border-radius: 20px;
   transition: all 0.3s;
 }
 
 /* Hero First Button Hover */
 .hero__first__btn:hover{
-  background-color: var(--secondary-color);
-  color: var(--main-color);
+  background-color: var(--cream-color);
+  color: var(--dark-green-color);
 }
 
 /* Secondary Button */
@@ -88,50 +95,50 @@ body, html{
   font-size: 10px;
   text-align: center;
   text-decoration: none;
-  color: var(--main-color);
-  font-family: var(--secondary-font);
+  color: var(--dark-green-color);
+  font-family: var(--merriweather-font);
   padding: 10px 20px;
-  border:2px solid var(--main-color);
+  border:2px solid var(--dark-green-color);
   border-radius: 20px;
   transition: all 0.3s;
 }
 
 /* Hero Second Button Hover */
 .hero__second__btn:hover{
-  border:2px solid  var(--secondary-color);
-  color: var(--secondary-color);
+  border:2px solid  var(--cream-color);
+  color: var(--cream-color);
 }
 
-/* || Hero Arrow Icon */
+/* Hero Arrow Icon */
 .hero__arrow__icon{
   font-size: 2rem;
   cursor: pointer;
-  color: var(--font-white);
-  background-color: var(--main-color);
+  color: var(--white-color);
+  background-color: var(--dark-green-color);
   border-radius: 50%;
   transition: all 0.2s ease-in-out;
 }
 
+/* Hero Hover 360 deg arrow btn */
 .hero__arrow__icon:hover{
   transform: scale(1.1) rotate(360deg);
-}
-.hero__arrow__icon:active{
-  transform: scale(1) rotate(360deg);
 }
 
 /* ||CONTENT */
 .content{
   min-height: 80vh;
-  border-bottom: 1px var(--main-color) solid;
+  border-bottom: 1px var(--dark-green-color) solid;
 }
 
+/* Content Title */
 .content__title{
   text-align: center;
   margin-block: 5rem;
   font-size: clamp(2rem, 5vw, 5vw );
-  font-family: var(--main-font);
+  font-family: var(--chillax-semi-font);
 }
 
+/* Content Unordered List */
 .content > .content__main{
   display: flex;
   align-items: center;
@@ -146,7 +153,7 @@ body, html{
   gap: 5rem;
   margin-block: 5rem;
   padding-bottom: 5rem;
-  border-bottom: 1px var(--main-color) solid;
+  border-bottom: 1px var(--dark-green-color) solid;
 }
 
 /* Content Container BedRoom */
@@ -156,7 +163,7 @@ body, html{
   gap: 5rem;
   margin-block: 5rem;
   padding-bottom: 5rem;
-  border-bottom: 1px var(--main-color) solid;
+  border-bottom: 1px var(--dark-green-color) solid;
 }
 
 /* Content Container Kitchen */
@@ -167,26 +174,19 @@ body, html{
   margin-block: 5rem;
 }
 
-/* Content Collections */
-.content > .collection{
-  flex: 1;
-  width: 100%;
-}
-
-
 /* Content Title */
 .content__category{
-  font-family: var(--secondary-font);
+  font-family: var(--poppins-font);
   text-align: center;
-  font-size: clamp(1rem, 3vh, 3vh);
+  font-size: clamp(1.5rem, 2vw, 2vw);
   text-transform: capitalize;
 }
 
 /* Content Button */
 .content__btn{
-  font-family: var(--secondary-font);
+  font-family: var(--merriweather-font);
   text-decoration: none;
-  color: var(--main-color);
+  color: var(--dark-green-color);
   text-align: center;gap: 15rem;
   font-size: 1.5rem;
   transition: all 0.3s;
@@ -196,8 +196,8 @@ body, html{
 
 /* Content Button Hover */
 .content__btn:hover{
-  color: var(--secondary-color);
-  background-color: var(--main-color);
+  color: var(--cream-color);
+  background-color: var(--dark-green-color);
   text-decoration: none;
 }
 
@@ -257,35 +257,39 @@ body, html{
 
 /* Card Content Name */
 .card__content__name{
-  font-family: 'chillax-medium';
+  font-family: var(--poppins-font);
+  font-weight: 500;
   font-size: 2vh;
 }
 
 /* Card Content Price */
 .card__content__price{
-  font-family: var(--main-font);
+  font-family: var(--merriweather-font);
+  font-weight: 600;
 }
 
+/* Card "Buy" Button */
 .card__buy{
-  color: var(--main-color);
-  font-family: var(--secondary-font);
+  color: var(--dark-green-color);
+  font-family: var(--merriweather-font);
   text-decoration: none;
   background-color: green ;
-  color: var(--secondary-color);
+  color: var(--cream-color);
   padding: 5px 10px;
   border-radius: 10px;
   max-width: 30px;
   transition: all 0.3s;
 }
 
+/* Card "Buy" Button Hover Effects*/
 .card__buy:hover{
   transform: scale(1.1);
   box-shadow: 0 0 5px 0 var(--color-black);
   background-color: rgb(47, 180, 47) ;
-  color: var(--secondary-color);
+  color: var(--cream-color);
 }
 
-/* Accordion and Video Section */
+/* || ACCORDION AND VIDEO */
 .accvideo{  
   display: flex;
   flex-direction: column;
@@ -293,19 +297,21 @@ body, html{
   margin: 1.5rem; 
 }
 
+/* Accordion & Video Section Title */
 .accvideo__title{
-  font-family: var(--main-font);
+  font-family: var(--chillax-semi-font);
   font-size: clamp(2rem, 4vw, 4vw);
   margin-bottom: 3rem;
-  
 }
 
+/* Accordion & Video Section Button */
 .accvideo__btn{
   display: flex;
   justify-content: space-between;
-  color: var(--secondary-color);
-  font-family: var(--secondary-font);
-  background-color: var(--main-color);
+  color: var(--cream-color);
+  font-family: var(--poppins-font);
+  font-weight: 500;
+  background-color: var(--dark-green-color);
   border: 1px solid var(--color-black);
   font-size: clamp(1rem, 2.5vh, 3vh);
   width: 100%;
@@ -315,27 +321,32 @@ body, html{
   border: none;
 }
 
+/* Accordion & Video Operator Symbol "+" before */
 .accvideo .accvideo__icon::before{
   content: "+";
 }
 
+/* Accordion & Video Operator Symbol "-" when active */
 .accvideo .accvideo__container.active .accvideo__icon::before{
   content: "-";
 }
 
+/* Accordion & Videio Text inside the panel  */
 .accvideo__text{
-  color: var(--main-color);
-  margin-block: 1rem;
+  color: var(--dark-green-color);
+  margin-top: 1rem;
   font-size: 17px;
-  font-family: sans-serif;
+  font-family: var(--merriweather-font);
+  line-height: 110%;
 }
 
-
+/* Video inside the AccVideo Section */
 .accvideo__video{
   width: 100%;
   margin-block: 2rem;
 }
 
+/* Accordion Panel */
 .accvideo .accvideo__container .accvideo__panel{
   transition: all 0.4s; 
   overflow: hidden;
@@ -373,30 +384,27 @@ body, html{
 }
 
 /* Footer container heading and pragraph */
-.footer__brand__name{
-  color: var(--font-white);
+.footer__brand--title{
+  color: var(--white-color);
   margin-bottom: 1rem;
-  font-family: var(--main-font);
+  font-family: var(--chillax-semi-font);
   font-size: 30px;
 }
 
+/* Footer Social Media Logos */
 .footer__logos{
-  color: var(--font-white);
+  color: var(--white-color);
   cursor: pointer;
   font-size: 2rem;
   margin-right: 1rem;
 }
 
-.footer__text{
-  color: var(--font-white);
-  font-family: var(--secondary-font);
-  line-height: 120%;
-}
-
+/* Footer title "links" */
 .footer__links--title{
-  color: var(--font-white);
+  color: var(--white-color);
   margin-bottom: 1rem;
-  font-family: var(--main-font);
+  font-family: var(--poppins-font);
+  font-weight: 600;
   font-size: 25px;
 }
 
@@ -405,15 +413,17 @@ body, html{
   margin-bottom: 1rem;
 }
 
+/* Footer name of the links */
 .footer__links--name{
-  color: var(--font-white);
-  font-family: var(--secondary-font);
+  color: var(--white-color);
+  font-family: var(--merriweather-font);
+  transition: all 0.2s;
 }
 
 /* footer links hover effect */
 .footer__links--name:hover{
-  color: var(--main-color);
-  background-color: var(--secondary-color);
+  color: var(--dark-green-color );
+  background-color: var(--cream-color);
   padding-inline: 5px;
 }
 
@@ -429,7 +439,7 @@ body, html{
   display: flex;
   justify-content: center;
   padding-bottom: 2rem;
-  font-family: "Chillax-medium";
+  font-family: var(--merriweather-font);
 }
 
 
