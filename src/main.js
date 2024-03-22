@@ -5,10 +5,11 @@ const imageUrls = [
   "./assets/herochair.jpg",
   "./assets/brownfurniture.jpg",
 ];
+
 let currentIndex = 0;
 
 // HERO Background Image
-changeImagebtn.addEventListener("click", () => {
+changeImagebtn.addEventListener("click", function(){
 
   backgroundImg.style.background = `url(${imageUrls[currentIndex]}) center/cover no-repeat fixed`
 
@@ -20,7 +21,7 @@ changeImagebtn.addEventListener("click", () => {
   }
 );
 // Removes fixed propert for background attachment when the window inner width is less than 1200px
-window.addEventListener("resize", () =>{
+window.addEventListener("resize", function(){
     if(window.innerWidth >= 1200){
       backgroundImg.style.backgroundAttachment = "fixed";
     }else{
