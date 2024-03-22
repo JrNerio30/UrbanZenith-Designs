@@ -8,7 +8,6 @@ const imageUrls = [
 
 let currentIndex = 0;
 
-// HERO Background Image
 changeImagebtn.addEventListener("click", function(){
 
   backgroundImg.style.background = `url(${imageUrls[currentIndex]}) center/cover no-repeat fixed`
@@ -20,7 +19,7 @@ changeImagebtn.addEventListener("click", function(){
     }
   }
 );
-// Removes fixed propert for background attachment when the window inner width is less than 1200px
+
 window.addEventListener("resize", function(){
     if(window.innerWidth >= 1200){
       backgroundImg.style.backgroundAttachment = "fixed";
@@ -32,11 +31,12 @@ window.addEventListener("resize", function(){
 
 if(window.innerWidth >= 1200){
   backgroundImg.style.backgroundAttachment = "fixed";
-}else{
+}
+else{
   backgroundImg.style.backgroundAttachment = "scroll";
 }
 
-// Accordion Active Click Event
+
 const acc = document.getElementsByClassName("accvideo__container");
 let i;
 
@@ -48,8 +48,8 @@ for(i = 0; i < acc.length; i++){
 }
 
 const year = new Date().getFullYear();
-const by = "Urban Zenith Design";
-const result = `${year} ${by}`
+const copyright =  `${year} ${"Urban Zenith Design"}`;
 
-document.getElementById("copyRightYear").outerHTML = result;
+document.getElementById("copyRightYear").outerHTML = copyright;
+
 
