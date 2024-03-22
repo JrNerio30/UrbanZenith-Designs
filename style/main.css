@@ -168,7 +168,7 @@ body, html{
 }
 
 /* Content Collections */
-.collections{
+.content > .collection{
   flex: 1;
   width: 100%;
 }
@@ -333,7 +333,7 @@ body, html{
 
 .accvideo__video{
   width: 100%;
-  margin-top: 5rem;
+  margin-block: 2rem;
 }
 
 .accvideo .accvideo__container .accvideo__panel{
@@ -377,7 +377,14 @@ body, html{
   color: var(--font-white);
   margin-bottom: 1rem;
   font-family: var(--main-font);
-  font-size: 25px;
+  font-size: 30px;
+}
+
+.footer__logos{
+  color: var(--font-white);
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1rem;
 }
 
 .footer__text{
@@ -422,11 +429,9 @@ body, html{
   display: flex;
   justify-content: center;
   padding-bottom: 2rem;
+  font-family: "Chillax-medium";
 }
 
-.footer__copyright{
-  font-family: var(--main-font);
-}
 
 
 
