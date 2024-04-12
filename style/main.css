@@ -59,7 +59,7 @@ body, html{
 .hero__text{
   font-family: var(--poppins-font);
   font-size: clamp(1rem, 2vw, 2vw );
-  color: white;
+  color: var(--dark-green-color);
   line-height: 120%;
 }
 
